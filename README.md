@@ -1,5 +1,6 @@
 # dieta_bot
 Полезный телеграмм бот для здорового образа жизни
+Рабочий пример бота @dietaEasy_bot
 
 # Nutrition Tracker Bot 🥗
 
