@@ -13,8 +13,8 @@ os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(DATA_DIR / 'users_data', exist_ok=True)
 os.makedirs(LOGS_DIR, exist_ok=True)
 
-BOT_TOKEN = ""
-DB_HOST = ""
-DB_USER = ""
-DB_PASSWORD = ""
-DB_NAME = ""
+BOT_TOKEN = "ваш_токен_бота"
+DB_HOST = "localhost"
+DB_USER = "root"
+DB_PASSWORD = "ваш_пароль"
+DB_NAME = "nutrition_bot"
