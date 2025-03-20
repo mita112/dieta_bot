@@ -34,3 +34,13 @@ nutrition-bot/
 ├── logger.py # Настройка системы логирования
 └── main.py # Основная логика бота
 
+## 🚀 Запуск проекта
+- Python 3.10+
+- MySQL 8.0+
+- Активный Telegram бот (@BotFather)
+
+1. Установите зависимости: pip install aiogram python-dotenv aiomysql
+2. Измените файл config.py
+3. Инициализируйте БД: CREATE DATABASE nutrition_bot;
+USE nutrition_bot;
+
