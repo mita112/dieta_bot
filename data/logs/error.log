@@ -1,0 +1,182 @@
+2025-03-06 22:50:54,630 - my_bot - ERROR - This is an error message.
+2025-03-06 23:02:04,919 - my_bot - ERROR - fjjfjfjfjf
+2025-03-06 23:15:03,919 - my_bot - ERROR - This is an error message.
+2025-03-06 23:49:05,200 - my_bot - ERROR - fjjfjfjfjf
+2025-03-07 01:10:40,820 - my_bot - CRITICAL - Критическая ошибка загрузки (C:\диета бот\data\users_data\users_data.pkl) - [Errno 13] Permission denied: 'C:\\диета бот\\data\\users_data\\users_data.pkl'
+2025-03-07 01:14:16,526 - my_bot - CRITICAL - Критическая ошибка загрузки (C:\диета бот\data\users_data\users_data.pkl) - [Errno 13] Permission denied: 'C:\\диета бот\\data\\users_data\\users_data.pkl'
+2025-03-07 01:17:47,842 - my_bot - CRITICAL - Критическая ошибка загрузки (C:\диета бот\data\users_data\users_data.pkl) - [Errno 13] Permission denied: 'C:\\диета бот\\data\\users_data\\users_data.pkl'
+2025-03-07 01:18:41,828 - my_bot - CRITICAL - Критическая ошибка загрузки (C:\диета бот\data\users_data\users_data.pkl) - [Errno 13] Permission denied: 'C:\\диета бот\\data\\users_data\\users_data.pkl'
+2025-03-07 15:17:42,014 - my_bot - CRITICAL - Критическая ошибка загрузки (C:\диета бот\data\users_data\users_data.pkl) - [Errno 13] Permission denied: 'C:\\диета бот\\data\\users_data\\users_data.pkl'
+2025-03-07 15:24:26 - my_bot - ERROR - fjjfjfjfjf
+2025-03-07 15:25:07 - my_bot - ERROR - fjjfjfjfjf
+2025-03-07 15:25:22 - my_bot - ERROR - fjjfjfjfjf - [hfh.py:22]
+2025-03-07 15:27:06 - my_bot - ERROR - fjjfjfjfjf - [hfh.py:22]
+2025-03-09 13:05:02 - my_bot - ERROR - Ошибка при закрытии соединения: object NoneType can't be used in 'await' expression - [hfh.py:104]
+2025-03-09 13:10:06 - my_bot - ERROR - Ошибка при закрытии соединения: object NoneType can't be used in 'await' expression - [hfh.py:104]
+2025-03-09 13:16:13 - my_bot - ERROR - Ошибка при закрытии соединения: object NoneType can't be used in 'await' expression - [hfh.py:103]
+2025-03-09 13:22:07 - my_bot - ERROR - Ошибка при закрытии соединения: object NoneType can't be used in 'await' expression - [hfh.py:104]
+2025-03-09 13:24:14 - my_bot - ERROR - Ошибка при закрытии соединения: 'Connection' object has no attribute '_closed' - [hfh.py:107]
+2025-03-09 13:24:37 - my_bot - ERROR - Ошибка при закрытии соединения: object NoneType can't be used in 'await' expression - [hfh.py:107]
+2025-03-09 13:26:54 - my_bot - ERROR - Ошибка при закрытии соединения: object NoneType can't be used in 'await' expression - [hfh.py:107]
+2025-03-09 13:28:26 - my_bot - ERROR - Ошибка при закрытии соединения: 'Connection' object has no attribute '_closed' - [hfh.py:107]
+2025-03-09 13:28:47 - my_bot - ERROR - Ошибка при закрытии соединения: 'Connection' object has no attribute '_closed' - [hfh.py:107]
+2025-03-09 14:47:40 - my_bot - ERROR - Ошибка execute() first при команде /profile - [hfh.py:150]
+2025-03-09 14:47:40 - my_bot - ERROR - Oшибка 'Logger' object has no attribute 'gebug' при попытке закрыть БД после /profile - [hfh.py:158]
+2025-03-09 14:48:42 - my_bot - ERROR - Ошибка execute() first при команде /profile - [hfh.py:150]
+2025-03-09 14:50:18 - my_bot - ERROR - Ошибка '_asyncio.Future' object is not subscriptable при команде /profile - [hfh.py:150]
+2025-03-09 16:32:37 - my_bot - CRITICAL - Критическая ошибка: cmd_update_weight() missing 2 required positional arguments: 'message' and 'state' после /start - [hfh.py:89]
+Traceback (most recent call last):
+  File "c:\диета бот\src\hfh.py", line 84, in cmd_start
+    await cmd_update_weight()
+          ~~~~~~~~~~~~~~~~~^^
+TypeError: cmd_update_weight() missing 2 required positional arguments: 'message' and 'state'
+2025-03-09 16:37:03 - my_bot - CRITICAL - Критическая ошибка: 'State' object has no attribute 'set' после /start - [hfh.py:89]
+Traceback (most recent call last):
+  File "c:\диета бот\src\hfh.py", line 84, in cmd_start
+    await cmd_update_weight(message, )
+  File "c:\диета бот\src\hfh.py", line 222, in cmd_update_weight
+    await SurveyStates.GET_WEIGHT.set()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'State' object has no attribute 'set'
+2025-03-09 17:53:48 - my_bot - CRITICAL - Критическая ошибка: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')\n                    VALUES (1374296012)' at line 1") после /start - [hfh.py:93]
+Traceback (most recent call last):
+  File "c:\диета бот\src\hfh.py", line 84, in cmd_start
+    await cursor.execute("""
+    ...<2 lines>...
+    """, (user.id))
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')\n                    VALUES (1374296012)' at line 1")
+2025-03-09 17:54:27 - my_bot - CRITICAL - Критическая ошибка: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')\n                    VALUES (1374296012)' at line 1") после /start - [hfh.py:93]
+Traceback (most recent call last):
+  File "c:\диета бот\src\hfh.py", line 84, in cmd_start
+    await cursor.execute("""
+    ...<2 lines>...
+    """, (user.id))
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')\n                    VALUES (1374296012)' at line 1")
+2025-03-09 18:27:10 - my_bot - CRITICAL - Критическая ошибка: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'weight, height, age, gender, activity_level)\n                    VALUES (1374296' at line 1") после /start - [hfh.py:93]
+Traceback (most recent call last):
+  File "c:\диета бот\src\hfh.py", line 84, in cmd_start
+    await cursor.execute("""
+    ...<2 lines>...
+        """, (user.id, 0, 0, 0, 'М', 0))
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\mitan\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'weight, height, age, gender, activity_level)\n                    VALUES (1374296' at line 1")
+2025-03-09 19:29:29 - my_bot - ERROR - Ошибка 'first_name' при команде /profile - [hfh.py:142]
+2025-03-09 20:05:59 - my_bot - ERROR - Ошибка 'first_name' при команде /profile - [hfh.py:150]
+2025-03-10 00:34:56 - my_bot - ERROR - Ошибка Telegram server says - Bad Request: can't parse entities: Character '>' is reserved and must be escaped with the preceding '\' при команде /profile - [hfh.py:183]
+2025-03-10 01:41:36 - my_bot - CRITICAL - Критическая ошибка: 'cugl_td' после /start - [hfh.py:180]
+Traceback (most recent call last):
+  File "c:\диета бот\src\hfh.py", line 177, in cmd_calculator
+    Углеводы: {user_data['cugl_td']}
+               ~~~~~~~~~^^^^^^^^^^^
+KeyError: 'cugl_td'
+2025-03-10 10:48:45 - my_bot - ERROR - Ошибка 'NoneType' object is not subscriptable при команде /profile - [hfh.py:272]
+2025-03-10 15:47:29 - my_bot - ERROR - Ошибка при внесении изменений в БД пользователь users, 1374296012 ((1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '60.0e0 SET `1374296012` = 'weight' WHERE user_id = 'users'' at line 1")) - [hfh.py:324]
+2025-03-10 15:53:09 - my_bot - ERROR - Ошибка при внесении изменений в БД пользователь users, 1374296012 ((1146, "Table 'telegram_bot.60.0' doesn't exist")) - [hfh.py:322]
+2025-03-10 17:41:11 - my_bot - ERROR - Ошибка БД: 0 - [hfh.py:622]
+2025-03-10 17:47:04 - my_bot - ERROR - Ошибка: 0 - [hfh.py:632]
+2025-03-10 17:50:14 - my_bot - ERROR - Ошибка: KeyError, 0 - [hfh.py:632]
+2025-03-10 17:52:20 - my_bot - ERROR - Ошибка: ключ 0 не найден в ALLOWED_NUTRIENTS - [hfh.py:637]
+2025-03-10 17:59:36 - my_bot - ERROR - Ошибка: ключ 0 не найден в ALLOWED_NUTRIENTS - [hfh.py:639]
+2025-03-10 18:02:59 - my_bot - ERROR - Ошибка: ключ 0 не найден в ALLOWED_NUTRIENTS - [hfh.py:641]
+2025-03-10 18:04:47 - my_bot - ERROR - Ошибка: IntegrityError, (1062, "Duplicate entry '1374296012' for key 'calendar_us.PRIMARY'") - [hfh.py:644]
+2025-03-10 18:06:58 - my_bot - ERROR - Ошибка: IntegrityError, (1062, "Duplicate entry '1374296012' for key 'calendar_us.PRIMARY'") - [hfh.py:647]
+2025-03-10 18:09:33 - my_bot - ERROR - Ошибка: ProgrammingError, (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'exists' at line 1") - [hfh.py:647]
+2025-03-10 19:28:28 - my_bot - ERROR - Ошибка: OperationalError, (1054, "Unknown column 'date_t' in 'field list'") - [hfh.py:635]
+2025-03-10 19:44:44 - my_bot - CRITICAL - Критическая ошибка: cannot access local variable 'user_data' where it is not associated with a value после /calculator - [hfh.py:241]
+Traceback (most recent call last):
+  File "c:\диета бот\src\hfh.py", line 221, in cmd_calculator
+    if stored_date != user_data['date_t']:
+                      ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'user_data' where it is not associated with a value
+2025-03-10 19:51:16 - my_bot - ERROR - Ошибка: 'NoneType' object is not subscriptable - [hfh.py:243]
+2025-03-10 22:52:55 - my_bot - ERROR - Ошибка: DataError, (1264, "Out of range value for column 'calory_td' at row 1") - [hfh.py:641]
+2025-03-10 22:53:44 - my_bot - ERROR - Ошибка: DataError, (1264, "Out of range value for column 'calory_td' at row 1") - [hfh.py:641]
+2025-03-10 22:53:56 - my_bot - ERROR - Ошибка: DataError, (1264, "Out of range value for column 'calory_td' at row 1") - [hfh.py:641]
+2025-03-10 23:32:08 - my_bot - ERROR - Ошибка: 'NoneType' object is not subscriptable - [hfh.py:243]
+2025-03-10 23:32:11 - my_bot - ERROR - Ошибка 'NoneType' object is not subscriptable при команде /profile - [hfh.py:280]
+2025-03-10 23:32:14 - my_bot - ERROR - Ошибка 'NoneType' object is not subscriptable при команде /profile - [hfh.py:280]
+2025-03-11 00:30:54 - my_bot - ERROR - Ошибка: 'NoneType' object is not subscriptable - [hfh.py:243]
+2025-03-11 00:37:43 - my_bot - ERROR - Ошибка: 'NoneType' object is not subscriptable - [hfh.py:243]
+2025-03-11 00:42:31 - my_bot - ERROR - Ошибка: 'NoneType' object is not subscriptable - [hfh.py:242]
+2025-03-11 00:46:11 - my_bot - ERROR - Ошибка: 'NoneType' object is not subscriptable - [hfh.py:243]
+2025-03-11 01:09:23 - my_bot - ERROR - Ошибка: 'int' object is not subscriptable - [hfh.py:249]
+2025-03-11 01:11:56 - my_bot - ERROR - Ошибка: 'int' object is not subscriptable - [hfh.py:249]
+2025-03-11 01:14:59 - my_bot - ERROR - Ошибка: 'int' object is not subscriptable - [hfh.py:250]
+2025-03-11 01:18:11 - my_bot - ERROR - Ошибка: execute() first - [hfh.py:245]
+2025-03-11 09:59:04 - my_bot - ERROR - Ошибка: DataError, (1264, "Out of range value for column 'calory_td' at row 1") - [hfh.py:642]
+2025-03-12 00:44:09 - my_bot - ERROR - Ошибка при внесении изменений в БД, calendar_us пользователь 1374296012, calory_td (Cursor closed) - [hfh.py:361]
+2025-03-12 00:50:52 - my_bot - ERROR - Ошибка object NoneType can't be used in 'await' expression при попытке закрыть БД, calendar_us после внесения изменений - [hfh.py:373]
+2025-03-12 00:53:45 - my_bot - ERROR - Ошибка object NoneType can't be used in 'await' expression при попытке закрыть БД, calendar_us после внесения изменений - [hfh.py:373]
+2025-03-12 02:16:42 - my_bot - ERROR - Ошибка при внесении изменений в БД, calendar_us пользователь 1374296012, calory_td ((1264, "Out of range value for column 'calory_td' at row 1")) - [hfh.py:357]
+2025-03-13 13:01:53 - my_bot - ERROR - Ошибка при внесении изменений в БД, calendar_us пользователь 1374296012, calory_td ((1048, "Column 'calories' cannot be null")) - [hfh.py:365]
+2025-03-13 13:07:28 - my_bot - ERROR - Ошибка при внесении изменений в БД, calendar_us пользователь 1374296012, calory_td ((1048, "Column 'calories' cannot be null")) - [hfh.py:369]
+2025-03-19 13:45:18 - my_bot - ERROR - Ошибка: (1062, "Duplicate entry '1374296012-2025-03-17' for key 'daily_nutrition.user_date_unique'") - [hfh.py:258]
+2025-03-19 13:45:42 - my_bot - ERROR - Ошибка: (1062, "Duplicate entry '1374296012-2025-03-17' for key 'daily_nutrition.user_date_unique'") - [hfh.py:258]
+2025-03-12 23:24:58 - my_bot - ERROR - Ошибка: handle_user_data() got multiple values for argument 'user_id' - [hfh.py:282]
+2025-03-12 23:26:11 - my_bot - ERROR - Ошибка: 'coroutine' object is not subscriptable - [hfh.py:282]
+2025-03-14 15:15:42 - my_bot - ERROR - Ошибка команда /day_in_calendar - [hfh.py:453]
+2025-03-14 15:16:58 - my_bot - ERROR - Ошибка команда /day_in_calendar - [hfh.py:454]
+2025-03-14 15:17:50 - my_bot - ERROR - Ошибка команда /day_in_calendar (1146, "Table 'telegram_bot.your_table' doesn't exist") - [hfh.py:454]
+2025-03-14 15:18:36 - my_bot - ERROR - Ошибка команда /day_in_calendar list indices must be integers or slices, not str - [hfh.py:454]
+2025-03-15 18:49:54 - my_bot - ERROR - Ошибка команда /day_in_calendar (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY date DESC' at line 1") - [hfh.py:460]
+2025-03-15 19:17:01 - my_bot - ERROR - Ошибка команда /day_in_calendar Telegram server says - Bad Request: can't parse entities: Unsupported start tag "big" at byte offset 89 - [hfh.py:513]
+2025-03-15 19:25:23 - my_bot - ERROR - Ошибка команда /day_in_calendar Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 64 - [hfh.py:469]
+2025-03-20 20:15:36 - my_bot - ERROR - Ошибка при обновлении значения: 'selected_date' - [hfh.py:948]
+2025-03-20 20:17:12 - my_bot - ERROR - Ошибка при обновлении значения: 'selected_date' - [hfh.py:949]
+2025-03-20 20:21:07 - my_bot - ERROR - Ошибка при обновлении значения: 'selected_date' - [hfh.py:946]
