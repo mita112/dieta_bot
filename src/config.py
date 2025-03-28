@@ -15,8 +15,8 @@ os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(DATA_DIR / 'users_data', exist_ok=True)
 os.makedirs(LOGS_DIR, exist_ok=True)
 
-BOT_TOKEN = "7532413631:AAEpPSUvWjGxROywswLlvvQxdw9zXYKrFHI"
+BOT_TOKEN = "ВАШ_ТОКЕН"
 DB_HOST = "localhost"
 DB_USER = "root"
-DB_PASSWORD = "1Mita.rubl1"
-DB_NAME = "telegram_bot"
+DB_PASSWORD = "ВАШ_ПАРОЛЬ"
+DB_NAME = ""
